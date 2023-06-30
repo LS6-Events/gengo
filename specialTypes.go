@@ -2,9 +2,7 @@ package gengo
 
 import "fmt"
 
-var specialTypes = map[string]string{
-	"time.Time": "string", // We can assume that all time.Time types will be serialized as strings
-}
+var specialTypes = map[string]string{}
 
 func (s *Service) handleSpecialType(component *Field) {
 	if _, ok := specialTypes[fmt.Sprintf("%s.%s", component.Package, component.Name)]; ok {

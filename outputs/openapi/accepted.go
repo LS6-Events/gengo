@@ -6,85 +6,93 @@ type openAPIJSONType struct {
 }
 
 var acceptedTypeMap = map[string]openAPIJSONType{
-	"string": openAPIJSONType{
+	"string": {
 		Type: "string",
 	},
-	"int": openAPIJSONType{
+	"int": {
 		Type:   "integer",
 		Format: "int32",
 	},
-	"int8": openAPIJSONType{
+	"int8": {
 		Type:   "integer",
 		Format: "int8",
 	},
-	"int16": openAPIJSONType{
+	"int16": {
 		Type:   "integer",
 		Format: "int16",
 	},
-	"int32": openAPIJSONType{
+	"int32": {
 		Type:   "integer",
 		Format: "int32",
 	},
-	"int64": openAPIJSONType{
+	"int64": {
 		Type:   "integer",
 		Format: "int64",
 	},
-	"uint": openAPIJSONType{
+	"uint": {
 		Type:   "integer",
 		Format: "uint",
 	},
-	"uint8": openAPIJSONType{
+	"uint8": {
 		Type:   "integer",
 		Format: "uint8",
 	},
-	"uint16": openAPIJSONType{
+	"uint16": {
 		Type:   "integer",
 		Format: "uint16",
 	},
-	"uint32": openAPIJSONType{
+	"uint32": {
 		Type:   "integer",
 		Format: "uint32",
 	},
-	"uint64": openAPIJSONType{
+	"uint64": {
 		Type:   "integer",
 		Format: "uint64",
 	},
-	"float": openAPIJSONType{
+	"float": {
 		Type:   "number",
 		Format: "float",
 	},
-	"float32": openAPIJSONType{
+	"float32": {
 		Type:   "number",
 		Format: "float32",
 	},
-	"float64": openAPIJSONType{
+	"float64": {
 		Type:   "number",
 		Format: "float64",
 	},
-	"bool": openAPIJSONType{
+	"bool": {
 		Type: "boolean",
 	},
-	"byte": openAPIJSONType{
+	"byte": {
 		Type:   "string",
 		Format: "byte",
 	},
-	"rune": openAPIJSONType{
+	"time.Time": {
+		Type:   "string",
+		Format: "date-time",
+	},
+	"uuid.UUID": {
+		Type:   "string",
+		Format: "uuid",
+	},
+	"rune": {
 		Type:   "string",
 		Format: "rune",
 	},
-	"struct": openAPIJSONType{
+	"struct": {
 		Type: "object",
 	},
-	"map": openAPIJSONType{
+	"map": {
 		Type: "object",
 	},
-	"slice": openAPIJSONType{
+	"slice": {
 		Type: "array",
 	},
-	"any": openAPIJSONType{
+	"any": {
 		Type: "",
 	},
-	"nil": openAPIJSONType{
+	"nil": {
 		Type: "",
 	},
 }
