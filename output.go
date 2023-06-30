@@ -11,6 +11,7 @@ type Output struct {
 type OutputMode string
 
 const (
-	OutputModeJSON    OutputMode = "json"
-	OutputModeOpenAPI OutputMode = "openapi"
+	OutputModeAzureFunctions OutputMode = "azureFunctions"
+	OutputModeJSON           OutputMode = "json"
+	OutputModeOpenAPI        OutputMode = "openapi"
 )

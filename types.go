@@ -1,6 +1,7 @@
 package gengo
 
 type Route struct {
+	FuncName    string       `json:"funcName"`
 	Method      string       `json:"method"`
 	Path        string       `json:"path"`
 	ContentType string       `json:"contentType,omitempty"`
