@@ -32,9 +32,9 @@ func convertRoute(route gengo.Route) string {
 			}
 
 			if pathParams.IsRequired {
-				routeString = strings.Replace(routeString, "*"+pathParams.Name, "{"+pathParams.Name+":"+azureType+"?}", 1)
-			} else {
 				routeString = strings.Replace(routeString, ":"+pathParams.Name, "{"+pathParams.Name+":"+azureType+"}", 1)
+			} else {
+				routeString = strings.Replace(routeString, "*"+pathParams.Name, "{"+pathParams.Name+":"+azureType+"?}", 1)
 			}
 		}
 	}
